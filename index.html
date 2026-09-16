@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>УК Прогресс — управление домом</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <div class="logo-mark">🏢</div>
+        УК Прогресс
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#request">Заявка</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <a class="nav-phone" href="#emergency">☎ Аварийка 24/7</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Управляем вашим домом честно и прозрачно</h1>
+    <p>Уборка, ремонт, лифты, отопление и аварийная служба 24/7 — всё под контролем одной команды.</p>
+    <a href="#request" class="btn btn-white">Оставить заявку</a>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Что мы делаем</h2>
+      <p class="section-sub">Полный цикл обслуживания многоквартирного дома</p>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ЦИФРЫ -->
+  <section class="stats" id="statsBlock"></section>
+
+  <!-- О КОМПАНИИ -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">О компании</h2>
+      <p class="section-sub">Мы — команда, которая отвечает за дом перед жителями</p>
+      <div class="about-text">
+        <p>Наша задача — чтобы в доме было чисто, тепло и безопасно, а любую проблему можно было решить одним звонком или заявкой. Мы работаем по стандартам раскрытия информации и публикуем отчёты о каждом выполнении.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- АВАРИЙКА -->
+  <section id="emergency">
+    <div class="container">
+      <div class="emergency">
+        <h3>🚨 Аварийная служба 24/7</h3>
+        <p>Засор, протечка, нет отопления или воды — звоните в любое время.</p>
+        <a class="phone-big" href="tel:+70000000000">+7 (000) 000-00-00</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФОРМА ЗАЯВКИ -->
+  <section id="request">
+    <div class="container">
+      <h2 class="section-title">Оставить заявку</h2>
+      <p class="section-sub">Опишите проблему — мы свяжемся с вами</p>
+      <form class="form-wrap" id="requestForm" novalidate>
+        <div class="form-row">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" placeholder="Иван Иванов">
+          <span class="error" data-for="name"></span>
+        </div>
+        <div class="form-row">
+          <label for="addr">Адрес / квартира</label>
+          <input type="text" id="addr" name="addr" placeholder="ул. Примерная, д. 1, кв. 10">
+          <span class="error" data-for="addr"></span>
+        </div>
+        <div class="form-row">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+          <span class="error" data-for="phone"></span>
+        </div>
+        <div class="form-row">
+          <label for="type">Тип проблемы</label>
+          <select id="type" name="type"></select>
+        </div>
+        <div class="form-row">
+          <label for="msg">Описание</label>
+          <textarea id="msg" name="msg" placeholder="Опишите проблему как можно подробнее..."></textarea>
+          <span class="error" data-for="msg"></span>
+        </div>
+        <button type="submit" class="btn btn-green">Отправить заявку</button>
+        <div class="form-msg" id="formMsg">✅ Заявка принята! Мы свяжемся с вами.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section id="contacts">
+    <div class="container">
+      <h2 class="section-title">Контакты</h2>
+      <p class="section-sub">Свяжитесь с нами удобным способом</p>
+      <div class="contacts-grid" id="contactsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ФУТЕР -->
+  <footer>
+    <div class="f-logo">УК Прогресс</div>
+    <p>Управление многоквартирным домом — честно и прозрачно</p>
+    <p>© <span id="year"></span> УК Прогресс</p>
+    <p class="disclaimer">
+      Демонстрационный учебный проект. Не является официальным сайтом реальной управляющей компании.
+      Все контакты и данные вымышлены.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
